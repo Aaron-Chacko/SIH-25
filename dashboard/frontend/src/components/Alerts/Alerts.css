@@ -1,0 +1,27 @@
+.alerts-page {
+  padding: 20px;
+}
+
+.alerts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.alerts-table th, .alerts-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.alerts-table th {
+  background: #f5f5f5;
+}
+
+tr.high { background: #ffe0e0; }
+tr.medium { background: #fff5e0; }
+tr.low { background: #e9f7ef; }
