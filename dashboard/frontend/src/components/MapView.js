@@ -36,33 +36,38 @@ const waterLayer = {
 // Village demo data (as before)
 const villageData = {
   "type": "FeatureCollection",
-  "features": [
+ features: [
     {
-      "type": "Feature",
-      "properties": {
-        "name": "Village A",
-        "status": "granted",
-        "family": "Tribal Family 1",
-        "land_size": "2 acres",
-        "claim_date": "2018"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[77.5, 23.2], [77.6, 23.2], [77.6, 23.3], [77.5, 23.3], [77.5, 23.2]]]
+      type: "Feature",
+      properties: { name: "Village A", status: "granted", family: "Tribal Family 1", land_size: "2 acres", claim_date: "2018" },
+      geometry: {
+        type: "Polygon",
+        coordinates: [[
+          [77.50, 23.20], [77.54, 23.21], [77.53, 23.24],
+          [77.50, 23.25], [77.48, 23.23], [77.50, 23.20]
+        ]]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "name": "Village B",
-        "status": "pending",
-        "family": "Tribal Family 2",
-        "land_size": "1.5 acres",
-        "claim_date": "2019"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[77.6, 23.2], [77.7, 23.2], [77.7, 23.3], [77.6, 23.3], [77.6, 23.2]]]
+      type: "Feature",
+      properties: { name: "Village B", status: "pending", family: "Tribal Family 2", land_size: "1.5 acres", claim_date: "2019" },
+      geometry: {
+        type: "Polygon",
+        coordinates: [[
+          [77.53, 23.24], [77.54, 23.21], [77.58, 23.22],
+          [77.59, 23.25], [77.55, 23.26], [77.53, 23.24]
+        ]]
+      }
+    },
+    {
+      type: "Feature",
+      properties: { name: "Village C", status: "rejected", family: "Tribal Family 3", land_size: "3 acres", claim_date: "2020" },
+      geometry: {
+        type: "Polygon",
+        coordinates: [[
+          [77.50, 23.25], [77.53, 23.24], [77.55, 23.26],
+          [77.52, 23.28], [77.49, 23.27], [77.50, 23.25]
+        ]]
       }
     }
   ]
